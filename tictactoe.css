@@ -1,0 +1,20 @@
+body{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /*Opyional: Set minimum height for full viewport*/
+}
+
+.box {
+  display: flex;
+  width: 230px;  /* Set the width of the box */
+  height: 230px;  /* Set the height of the box */
+  background-color: lightblue; /* Add a background color */
+  border: 1px solid black;  /* Add a border */
+  margin: 1px auto;  /* Add margin for spacing */
+}
+
+.row{
+
+    margin: 1px
+}
