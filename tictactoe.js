@@ -83,3 +83,10 @@ boxes.forEach(box => box.addEventListener('click', handleClick));
 
 displayPlayerTurn(); // Display initial player turn (optional)
 
+button = document.getElementById("resetbutton");
+button.addEventListener("click", function (){
+  boxeslist = [0, 0, 0, 0, 0, 0, 0, 0, 0];
+  playerturn = 1;
+  boxes.forEach((box) => box.addEventListener("click", handleClick));
+});
+

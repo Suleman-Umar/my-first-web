@@ -1,0 +1,82 @@
+body {
+  background-image: url("Images/lb.bg.png"); /* Replace with your image path */
+  background-repeat: repeat; /* Optional: control how the image repeats */
+  background-size: cover; /* Optional: control how the image fills the background */
+  background-position: center; /* Optional: control the image position */
+}
+
+.profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 50px;
+}
+
+.profile-picture {
+  width: 800px; /* Adjust width as needed */
+  height: 800px; /* Adjust height as needed */
+  margin-right: 20px;
+}
+
+.profile-picture img {
+  width: 100%; /* Ensures image fills the container */
+  height: auto; /* Maintains image aspect ratio */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-disc {
+  color: white;
+  display: inline;
+}
+
+.profile-content {
+  display: flex; /* Make the container a flexbox */
+}
+
+.header,
+.navigation a {
+  font-family: "Open Sans", sans-serif; /* Primary font: Open Sans */
+  font-family: "Lato", sans-serif; /* Secondary font: Lato */
+  font-family: Arial, sans-serif; /* Fallback for older browsers */
+}
+
+/* 2. Refined Header Section */
+.header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #040404; /* Light gray background */
+  padding: 20px 30px; /* Increased spacing for better readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.navigation {
+  float: right; /* Maintain right-sided alignment */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* 5. Refined Navigation Link Styles */
+.navigation li {
+  display: inline-block; /* Maintain inline display */
+  margin-right: 30px; /* Increased spacing for better breathing room */
+}
+
+.navigation a {
+  text-decoration: none; /* Remove underline */
+  color: #ff0000; /* Darker blue for better contrast */
+  font-size: 18px; /* Slightly larger link size for readability */
+  font-weight: 400; /* Regular font weight for links */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+}
+
+.navigation a:hover {
+  color: #007bff; /* Blue hover color for emphasis */
+}

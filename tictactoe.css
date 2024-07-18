@@ -1,20 +1,91 @@
-body{
-    display: flex;
-  justify-content: center;
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   align-items: center;
-  min-height: 100vh; /*Opyional: Set minimum height for full viewport*/
+  background-image: url("Images/bybg.png"); /* Replace with your image path */
+  background-repeat: repeat; /* Optional: control how the image repeats */
+  background-size: cover; /* Optional: control how the image fills the background */
+  background-position: center; /* Optional: control the image position */
 }
 
 .box {
   display: flex;
-  width: 230px;  /* Set the width of the box */
-  height: 230px;  /* Set the height of the box */
-  background-color: lightblue; /* Add a background color */
-  border: 1px solid black;  /* Add a border */
-  margin: 1px auto;  /* Add margin for spacing */
+  width: 200px; /* Set the width of the box */
+  height: 200px; /* Set the height of the box */
+  background-color: rgb(255, 0, 0); /* Add a background color */
+  border: 7px solid black; /* Add a border */
+  margin: 1px auto; /* Add margin for spacing */
 }
 
-.row{
+.row {
+  margin: 1px;
+}
 
-    margin: 1px
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header,
+.navigation a {
+  font-family: "Open Sans", sans-serif; /* Primary font: Open Sans */
+  font-family: "Lato", sans-serif; /* Secondary font: Lato */
+  font-family: Arial, sans-serif; /* Fallback for older browsers */
+}
+
+/* 2. Refined Header Section */
+.header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #9592f0; /* Light gray background */
+  padding: 20px 327px; /* Increased spacing for better readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* 4. Improved Navigation Menu */
+.navigation {
+  float: right; /* Maintain right-sided alignment */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* 5. Refined Navigation Link Styles */
+.navigation li {
+  display: inline-block; /* Maintain inline display */
+  margin-right: 30px; /* Increased spacing for better breathing room */
+}
+
+.navigation a {
+  text-decoration: none; /* Remove underline */
+  color: #212529; /* Darker blue for better contrast */
+  font-size: 25px; /* Slightly larger link size for readability */
+  font-weight: 400; /* Regular font weight for links */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf") format("tff");
+}
+
+.navigation a:hover {
+  color: #000000; /* Blue hover color for emphasis */
+}
+
+/* 3. Position the Game Title */
+.game-title {
+  font-size: 24px;
+  font-weight: bold;
+  background: rgb(255, 145, 55); /* Change background color as needed */
+  text-align: center; /* Center the content horizontally */
+  margin: 10px 0; /* Add some margin for spacing above and below */
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf") format("tff");
 }

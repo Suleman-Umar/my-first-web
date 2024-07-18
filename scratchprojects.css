@@ -1,0 +1,10 @@
+.projectview{
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+body{
+    justify-content: center;
+    align-items: center;
+}

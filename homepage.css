@@ -1,20 +1,29 @@
 body {
-    background-image: url("backgroundimg.jpeg");  /* Replace with your image path */
-    background-repeat: no-repeat;  /* Optional: control how the image repeats */
-    background-size: cover;       /* Optional: control how the image fills the background */
-    background-position: center;  /* Optional: control the image position */
-    margin: 0;  /* Remove default margin for better background coverage */
-    padding: 0;  /* Remove default padding for better background coverage */
-    font-family: Arial, sans-serif;  /* Optional: set a base font for your content */
-  }
+  background-image: url("Images/bgimg.jpg"); /* Replace with your image path */
+  background-repeat: repeat; /* Optional: control how the image repeats */
+  background-size: cover; /* Optional: control how the image fills the background */
+  background-position: center; /* Optional: control the image position */
+}
 /* Button styling */
 button {
-  padding: 10px 20px;
-  background-color: #4CAF50; /* Green */
+  padding: 30px 60px;
+  background-color: #4caf50; /* Green */
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 15px;
   cursor: pointer;
+  display: flex; /* Maintain flexbox for alignment */
+  justify-content: center; /* Keep horizontal centering */
+  align-items: center; /* Keep vertical centering */
+  font-size: 20px; /* Increase font size (adjust as needed) */
+}
+
+.boxcontainer {
+  display: flex; /* Enable flexbox for alignment */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: fit-content; /* Adjust container height as needed */
+  min-height: 100vh;
 }
 
 /* Text styling (after clicking) - targets element with ID "message" */
@@ -22,4 +31,61 @@ button {
   margin-top: 10px;
   color: green;
   font-weight: bold;
+}
+
+/* 1. Modern Font Choices (with Fallbacks) */
+.header,
+.navigation a {
+  font-family: "Open Sans", sans-serif; /* Primary font: Open Sans */
+  font-family: "Lato", sans-serif; /* Secondary font: Lato */
+  font-family: Arial, sans-serif; /* Fallback for older browsers */
+}
+
+/* 2. Refined Header Section */
+.header {
+  position: sticky;
+  top: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  background-color: #a24fb2; /* Light gray background */
+  padding: 20px 30px; /* Increased spacing for better readability */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* 3. Enhanced Logo Styling */
+.logo {
+  font-size: 28px; /* Larger logo for prominence */
+  font-weight: bold; /* Maintain bold text */
+  color: #212529; /* Darker blue for contrast */
+  text-transform: uppercase; /* Capitalize for emphasis (optional) */
+}
+
+/* 4. Improved Navigation Menu */
+.navigation {
+  float: right; /* Maintain right-sided alignment */
+  list-style: none; /* Remove default bullet points */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+/* 5. Refined Navigation Link Styles */
+.navigation li {
+  display: inline-block; /* Maintain inline display */
+  margin-right: 30px; /* Increased spacing for better breathing room */
+}
+
+.navigation a {
+  text-decoration: none; /* Remove underline */
+  color: #212529; /* Darker blue for better contrast */
+  font-size: 25px; /* Slightly larger link size for readability */
+  font-weight: 400; /* Regular font weight for links */
+  transition: color 0.3s ease; /* Smooth color change on hover */
+  font-family: "Montserrat";
+  src: url("fonts/Montserrat-Italic-VariableFont_wght.ttf") format("tff");
+}
+
+.navigation a:hover {
+  color: #007bff; /* Blue hover color for emphasis */
 }
